@@ -11,10 +11,11 @@ include('./../vista/menu/menu.php');
    
 </head>
 <body>
+  <div class="container">
     <h1>Bienvenido</h1>
     <form class="" name="myForm" action="../controlador/control.ingresar.php"  onsubmit="return validateForm()" method="post">
-                    <div class="modal-body">
-                            <section class="main row">
+          <section class="main row">
+                
                                 <br>
                                     <div class="col-md-6">
                                         <div class="mb-3">
@@ -70,16 +71,17 @@ include('./../vista/menu/menu.php');
                                         </div>
 
                                     </div>
-                            </section>
-                    </div>
-                    <div class="modal-footer">
-                                    <div class="">
+                        
+            
+             
+                                  </section>
+                                    <div class="button-box">
                                         <input type="submit" class="btn btn-primary" role="button" value="Guardar"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i>
 
                                         <button type="submit" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                                     </div>
-                                </div>
-                </form>
+      </form>
+      </div>
 <script src="../vista/validacion.js"></script>
 
 </body>
