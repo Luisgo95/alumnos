@@ -1,6 +1,6 @@
 <?php
-session_start();
-include('class.conexion.php');
+// session_start();
+include('conexion.php');
 
 class Matriz
 {
@@ -27,7 +27,7 @@ class Matriz
         //CURLOPT_HEADER => true,
         CURLOPT_HTTPHEADER => array(
           'Content-Type: application/json',
-          'Authorization: Bearer '.$_SESSION['Token'],
+        //   'Authorization: Bearer '.$_SESSION['Token'],
           'Content-Length: ' . strlen($datosCodificados), // Abajo podríamos agregar más encabezados
           'Personalizado: Luis te saluda', # Un encabezado personalizado
         ),
@@ -73,7 +73,7 @@ class Matriz
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => "GET",
         CURLOPT_HTTPHEADER => array(
-          'Authorization: Bearer '.$_SESSION['Token'],
+          // 'Authorization: Bearer '.$_SESSION['Token'],
           "cache-control: no-cache"
         ),
       ));

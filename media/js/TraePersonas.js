@@ -1,23 +1,27 @@
 $(document).ready(function() {
-	$('#example').DataTable( {
+	$('#tablaAlumnos').DataTable( {
 		"bDeferRender": true,
 		"sPaginationType": "full_numbers",
 		"ajax": {
 			//URL donde se extraen los datos
-			"url": "../Controlador/Personas/FuncionTraer.php",
+			"url": "../controlador/funcionTraer.php",
         	"type": "get"
 		},
 		//Nombres que se decclararon en FuncionTRaeUsuarios.php en la variable tabla
 //antes del row
 		"columns": [
 		{ "data": "id" },
-		{ "data": "Nombres" },
-		{ "data": "Apellidos" },
-		{ "data": "Nit" },
-		{ "data": "Nacimiento" },
-		{ "data": "Acciones" },
-		{ "data": "Asignar" }
-		
+		{ "data": "carnet" },
+		{ "data": "nombre" },
+		{ "data": "apellidos" },
+		{ "data": "direccion" },
+		{ "data": "genero" },
+		{ "data": "telefono" },
+		{ "data": "fechaNacimiento" },
+		{ "data": "generoPoesia" },
+		{ "data": "carrera" },
+		{ "data": "fechaInscripcion" },
+		{ "data": "fechaExposicion" }
 		],
 		"oLanguage": {
             "sProcessing":     "Procesando...",

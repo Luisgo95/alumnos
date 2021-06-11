@@ -43,7 +43,7 @@ function validateForm() {
     var birth = document.forms["myForm"]["birth"].value;
     var year =birth.substring(0, 4);
     var age = 2021-year;
-    alert("age"+year);
+    // alert("age"+year);
 
     if(age<18){
         alert("debes ser mayor de 17 años");
@@ -60,7 +60,7 @@ function validateForm() {
       return false;
     }
     if(resultCarnetA && length && !validationCeroA && validationLastA && validationLast5A){
-        alert("Si estas bien");
+        // alert("Si estas bien");
          return true;
     }else{
         alert("El carnet debe llevar minimo 6 caracteres, la primer letra debe ser a, no debe tener ceros, el tercer caracter debe ser 5 y debe terminar en 1,3 o 9");
