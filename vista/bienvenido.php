@@ -37,7 +37,7 @@ include('./../vista/menu/menu.php');
                                         </div>
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Género</label>
-                                        <select name ="gender" class="form-select" aria-label="Default select example">
+                                        <select name ="gender" class="form-control" >
                                           <option selected>Selecciona tu género</option>
                                           <option value="Masculino">Masculino</option>
                                           <option value="Femenino">Femenino</option>
@@ -62,7 +62,7 @@ include('./../vista/menu/menu.php');
                                         </div>
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Genero de poesía</label>
-                                        <select name ="poetry" class="form-select" aria-label="Default select example">
+                                        <select name ="poetry" class="form-control">
                                           <option selected>Selecciona tu género</option>
                                           <option value="Lírica">Lírica</option>
                                           <option value="épica">épica</option>
@@ -70,16 +70,15 @@ include('./../vista/menu/menu.php');
                                         </select>
                                         </div>
 
-                                    </div>
-                        
+                               
+                        <br> 
             
              
-                                  </section>
-                                    <div class="button-box">
-                                        <input type="submit" class="btn btn-primary" role="button" value="Guardar"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i>
-
-                                        <button type="submit" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                    </div>
+                                      <input type="submit" class="btn btn-primary" role="button" value="Guardar"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i>
+                                      
+                                      <button type="submit" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                                      </div>
+                                    </section>
       </form>
       </div>
 <script src="../vista/validacion.js"></script>

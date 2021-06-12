@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<div class="container">
+<!-- <div class="container"> -->
       <div class="col-md-8 col-md-offset-2">
         <table id="Encabezado" style="width:100%">
 
@@ -33,8 +33,7 @@
                        <h1>Lista de Alumnos<h1>
             </tbody>
         </table>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
+ 
         <table id="tablaAlumnos" class="table table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
                 <tr>
@@ -72,7 +71,7 @@
                 </tr>
             </tfoot>
         </table>
-    </div>
+    <!-- </div> -->
   
 </body>
 
