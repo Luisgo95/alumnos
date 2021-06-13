@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$('#tablaAlumnos').DataTable( {
 		"bDeferRender": true,
+		// 'serverSide': true,
 		"sPaginationType": "full_numbers",
 		"ajax": {
 			//URL donde se extraen los datos

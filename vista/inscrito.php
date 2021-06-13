@@ -20,34 +20,34 @@ include('./../vista/menu/menu.php');
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Codigo</label>
-                                        <input type="text" name ="carnet" placeholder="Carnet" class="form-control" id="carnet"value="<?php echo $_GET['id']; ?>">
+                                        <input type="text" name ="carnet" placeholder="Carnet" class="form-control" id="carnet" readonly="true" value="<?php echo $_GET['id']; ?>">
                                         </div>
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Carnet</label>
-                                        <input type="text" name ="carnet" placeholder="Carnet" class="form-control" id="carnet"value="<?php echo $_GET['carnet']; ?>">
+                                        <input type="text" name ="carnet" placeholder="Carnet" class="form-control" id="carnet" readonly="true" value="<?php echo $_GET['carnet']; ?>">
                                         </div>
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Nombre</label>
-                                        <input type="text" name ="name" placeholder="Nombre"  class="form-control" id="name"value="<?php echo $_GET['name']; ?>">
+                                        <input type="text" name ="name" placeholder="Nombre"  class="form-control" id="name" readonly="true" value="<?php echo $_GET['name']; ?>">
                                         </div>
 
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Apellidos</label>
-                                        <input type="text" name ="lastName" placeholder="Apellidos"  class="form-control" id="apellidos"value="<?php echo $_GET['lastName']; ?>">
+                                        <input type="text" name ="lastName" placeholder="Apellidos"  class="form-control" id="apellidos" readonly="true" value="<?php echo $_GET['lastName']; ?>">
                                         </div>
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Dirección</label>
-                                        <input type="text" name ="direction" placeholder="Dirección"  class="form-control" id="apellidos"value="<?php echo $_GET['direccion']; ?>">
+                                        <input type="text" name ="direction" placeholder="Dirección"  class="form-control" id="apellidos" readonly="true" value="<?php echo $_GET['direccion']; ?>">
                                         </div>
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Género</label>
-                                        <select name ="gender" class="form-control" > 
+                                        <select name ="gender" class="form-control" readonly="true" > 
                                         <?php 
                                         echo '<option value="' . $_GET['genero'] . '">' . $_GET['genero'] . '</option>';
                                         ?>
                                           <!-- <option selected>Selecciona tu género</option> -->
-                                          <option value="Masculino">Masculino</option>
-                                          <option value="Femenino">Femenino</option>
+                                          <!-- <option value="Masculino">Masculino</option>
+                                          <option value="Femenino">Femenino</option> -->
                                         </select>
                                         </div>
                               
@@ -56,37 +56,37 @@ include('./../vista/menu/menu.php');
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Telefono</label>
-                                        <input type="text" name ="phone" placeholder="Telefono"  class="form-control" id="phone"value="<?php echo $_GET['telefono']; ?>">
+                                        <input type="text" name ="phone" placeholder="Telefono"  class="form-control" id="phone" readonly="true" value="<?php echo $_GET['telefono']; ?>">
                                         </div>
                                         <div class="mb-3">
                                         <label for="name" class="form-label">fecha de Nacimiento</label>
-                                        <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth" value="<?php echo $_GET['fechaNacimiento']; ?>">
+                                        <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth" readonly="true"  value="<?php echo $_GET['fechaNacimiento']; ?>">
                                         </div>
 
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Carrera</label>
-                                        <input type="text" name ="career" placeholder="Carrera"  class="form-control" id="career"value="<?php echo $_GET['carrera']; ?>">
+                                        <input type="text" name ="career" placeholder="Carrera"  class="form-control" id="career" readonly="true" value="<?php echo $_GET['carrera']; ?>">
                                         </div>
                                         <div class="mb-3">
                                         <label for="name" class="form-label">Genero de poesía</label>
-                                        <select name ="poetry" class="form-control">
+                                        <select name ="poetry" class="form-control" readonly="true">
                                         <?php 
                                         echo '<option value="' . $_GET['poetry'] . '">' . $_GET['poetry'] . '</option>';
                                         ?>
                                           <!-- <option selected>Selecciona tu género</option> -->
-                                          <option value="Lírica">Lírica</option>
+                                          <!-- <option value="Lírica">Lírica</option>
                                           <option value="épica">épica</option>
-                                          <option value="dramática">dramática</option>
+                                          <option value="dramática">dramática</option> -->
                                         </select>
                                         
                                         <div class="mb-3">
                                         <label for="name" class="form-label">fecha de Inscripción</label>
-                                        <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth"value="<?php echo $_GET['fechaInscripcion']; ?>">
+                                        <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth" readonly="true" value="<?php echo $_GET['fechaInscripcion']; ?>">
                                         </div>
                                         
                                         <div class="mb-3">
                                         <label for="name" class="form-label">fecha de Exposicion</label>
-                                        <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth"value="<?php echo $_GET['fechaExposicion']; ?>">
+                                        <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth" readonly="true" value="<?php echo $_GET['fechaExposicion']; ?>">
                                         </div>
                                     </div>
 

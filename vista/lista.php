@@ -12,9 +12,9 @@
     <script src="../media/js/dataTables.bootstrap.min.js"></script> -->
     <script src="../media/js/TraePersonas.js"></script>
     <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
+        // $(document).ready(function() {
+        //     $('[data-toggle="tooltip"]').tooltip();
+        // });
     </script>
     <!-- <script src="../../media/js/jquery-1.10.2.js"></script> -->
 

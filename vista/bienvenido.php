@@ -64,9 +64,9 @@ include('./../vista/menu/menu.php');
                                         <label for="name" class="form-label">Genero de poesía</label>
                                         <select name ="poetry" class="form-control">
                                           <option selected>Selecciona tu género</option>
-                                          <option value="Lírica">Lírica</option>
-                                          <option value="épica">épica</option>
-                                          <option value="dramática">dramática</option>
+                                          <option value="Lirica">Lírica</option>
+                                          <option value="epica">épica</option>
+                                          <option value="dramatica">dramática</option>
                                         </select>
                                         </div>
 
