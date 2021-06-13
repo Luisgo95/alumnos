@@ -38,36 +38,35 @@
             <thead>
                 <tr>
                     <th>Codigo</th>
-                    <th>Nombre </th>
-                    <th>No boleta </th>
-                    <th>Descripcion</th>
-                    <th>Cantidad</th>
-                    <th>Usuario</th>
-                    <th>Acciones</th>
-                    <th>Cantidad</th>
-                    <th>Usuario</th>
-                    <th>Acciones</th>
-                    <th>Cantidad</th>
-                    <th>Usuario</th>
-
+                    <th>Carnet </th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Direccion</th>
+                    <th>Género</th>
+                    <th>Teléfono</th>
+                    <th>Nacimiento</th>
+                    <th>Tipo</th>
+                    <th>Carrera</th>
+                    <th>Inscripción</th>
+                    <th>Exposición</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
             <tfoot>
                 <tr>
-                     <th>Codigo</th>
-                    <th>Nombre </th>
-                    <th>No boleta </th>
-                    <th>Descripcion</th>
-                    <th>Cantidad</th>
-                    <th>Usuario</th>
-                    <th>Acciones</th>
-                    <th>Cantidad</th>
-                    <th>Usuario</th>
-                    <th>Acciones</th>
-                    <th>Cantidad</th>
-                    <th>Usuario</th>
+                <th>Codigo</th>
+                    <th>Carnet </th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Direccion</th>
+                    <th>Género</th>
+                    <th>Teléfono</th>
+                    <th>Nacimiento</th>
+                    <th>Tipo</th>
+                    <th>Carrera</th>
+                    <th>Inscripción</th>
+                    <th>Exposición</th>
                 </tr>
             </tfoot>
         </table>

@@ -14,8 +14,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
         $direction = filter_var(strtolower($_POST['direction']), FILTER_SANITIZE_STRING);
         $gender = filter_var(strtolower($_POST['gender']), FILTER_SANITIZE_STRING);
         $phone = filter_var(strtolower($_POST['phone']), FILTER_SANITIZE_STRING);
-        $birth = filter_var(strtolower($_POST['birth']), FILTER_SANITIZE_STRING);
-        // $birth = "2021-06-11T10:06:00Z";
+        $birth =$_POST['birth'];
+        $birth = $birth.'T10:06:00Z';
+        //  $birth = "2021-06-11T10:06:00Z";
         $career = filter_var(strtolower($_POST['career']), FILTER_SANITIZE_STRING);
         $poetry = filter_var(strtolower($_POST['poetry']), FILTER_SANITIZE_STRING);
 
@@ -34,10 +35,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
                 "fechaInscripcion"=>$birth,
                 "fechaExposicion"=>$birth
                 ];
-              //   var_dump($datos);
+               var_dump($datos);
 
          $mensaje = $consultas -> insertarJSON($datos,$servicio);
-         echo $mensaje;
+        //  echo $mensaje;
         //    header('Location: ../../vista/inscrito.php');
         }
  ?>

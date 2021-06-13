@@ -38,12 +38,12 @@ class Matriz
       $resultado = curl_exec($ch);
       # Vemos si el código es 200, es decir, HTTP_OK
       $codigoRespuesta = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-      if ($codigoRespuesta === 200) {
+      if ($codigoRespuesta == 201) {
         # Decodificar JSON porque esa es la respuesta
         $respuestaDecodificada = json_decode($resultado);
        // $respuestaDecodificada =$resultado;
 
-        $_SESSION['Mensaje'] = 200;
+        $_SESSION['Mensaje'] = 201;
         return $respuestaDecodificada;
         # Simplemente los imprimimos
       } else {
