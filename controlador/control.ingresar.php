@@ -31,9 +31,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
                 "telefono" => $phone,
                 "fechaNacimiento" => $birth,
                 "carrera" => $career,
-                "generoPoesia" => $poetry,
-                "fechaInscripcion"=>$birth,
-                "fechaExposicion"=>$birth
+                "generoPoesia" => $poetry
                 ];
                 
           $mensaje = $consultas -> insertarJSON($datos,$servicio);
