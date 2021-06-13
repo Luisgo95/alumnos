@@ -5,3 +5,11 @@
     margin-left: 660px;
 
 }
+.btn-danger-my{
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+
+    margin-left: 591px !important;
+    margin: -63px;
+}

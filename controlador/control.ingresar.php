@@ -35,10 +35,38 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
                 "fechaInscripcion"=>$birth,
                 "fechaExposicion"=>$birth
                 ];
-               var_dump($datos);
-
-         $mensaje = $consultas -> insertarJSON($datos,$servicio);
-        //  echo $mensaje;
-        //    header('Location: ../../vista/inscrito.php');
+                
+          $mensaje = $consultas -> insertarJSON($datos,$servicio);
+                
+        //   var_dump(get_object_vars($mensaje));
+        //  $JSON = json_encode($mensaje);
+         echo $id=$mensaje->id;
+          echo $carnet=$mensaje->carnet;
+         echo  $name=$mensaje->nombre;
+         echo  $lastName=$mensaje->apellidos;
+         echo  $direccion=$mensaje->direccion;
+         echo  $genero=$mensaje->genero;
+         echo  $telefono=$mensaje->telefono;
+         echo  $fechaNacimiento=$mensaje->fechaNacimiento;
+         $fechaNacimiento = explode("T", $fechaNacimiento);
+         $fechaNacimiento = $fechaNacimiento[0];
+         echo  $carrera=$mensaje->carrera;
+         echo  $poetry=$mensaje->generoPoesia;
+         echo  $fechaInscripcion=$mensaje->fechaInscripcion;
+         $fechaInscripcion = explode("T", $fechaInscripcion);
+         $fechaInscripcion = $fechaInscripcion[0];
+         echo  $fechaExposicion=$mensaje->fechaExposicion;
+         $fechaExposicion = explode("T", $fechaExposicion);
+         $fechaExposicion = $fechaExposicion[0];
+        //  var_dump($JSON);
+        //  echo $JSON->telefono;
+          // echo $mensaje->data['carnet'];
+          // foreach ($mensaje as $row) {
+          //   echo $row['id'];
+          // }
+          // echo $mensaje[5];
+            header('Location: ../vista/inscrito.php?carnet='.$carnet.'&id='.$id.'&name='.$name.'&lastName='.$lastName.'&direccion='.$direccion
+            .'&genero='.$genero.'&telefono='.$telefono.'&fechaNacimiento='.$fechaNacimiento.'&carrera='.$carrera.'&poetry='.$poetry.'&fechaInscripcion='.$fechaInscripcion
+            .'&fechaExposicion='.$fechaExposicion);
         }
  ?>
