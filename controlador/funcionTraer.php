@@ -2,10 +2,10 @@
 //   require_once('../Verificacion.php');
 require_once('../modelo/crud.php');
 $pagination=1;
-//session_start();
+// session_start();
 	///$modelo = new Conexion();c
-    $servicio ='alumno/?page='.$pagination;
-    // $servicio ='alumno/';
+    // $servicio ='alumno/?page='.$pagination;
+    $servicio ='alumno/';
 	// echo $servicio;
 	$Peticion = new Matriz();
 	$consulta = $Peticion->leerlugar($servicio);
@@ -44,6 +44,8 @@ foreach ($data as $row) {
 	},';
 }
 $tabla = substr($tabla,0, strlen($tabla) - 1);
+// $_SESSION['DatosLista']=$tabla;
+// echo $_SESSION['DatosLista'];
 echo '{"data":['.$tabla.']}';
 
 

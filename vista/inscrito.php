@@ -19,7 +19,7 @@ include('./../vista/menu/menu.php');
                                 <br>
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                        <label for="name" class="form-label">Codigo</label>
+                                        <label for="name" class="form-label">Código</label>
                                         <input type="text" name ="carnet" placeholder="Carnet" class="form-control" id="carnet" readonly="true" value="<?php echo $_GET['id']; ?>">
                                         </div>
                                         <div class="mb-3">
@@ -55,11 +55,11 @@ include('./../vista/menu/menu.php');
 
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                        <label for="name" class="form-label">Telefono</label>
+                                        <label for="name" class="form-label">Teléfono</label>
                                         <input type="text" name ="phone" placeholder="Telefono"  class="form-control" id="phone" readonly="true" value="<?php echo $_GET['telefono']; ?>">
                                         </div>
                                         <div class="mb-3">
-                                        <label for="name" class="form-label">fecha de Nacimiento</label>
+                                        <label for="name" class="form-label">Fecha de Nacimiento</label>
                                         <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth" readonly="true"  value="<?php echo $_GET['fechaNacimiento']; ?>">
                                         </div>
 
@@ -68,7 +68,7 @@ include('./../vista/menu/menu.php');
                                         <input type="text" name ="career" placeholder="Carrera"  class="form-control" id="career" readonly="true" value="<?php echo $_GET['carrera']; ?>">
                                         </div>
                                         <div class="mb-3">
-                                        <label for="name" class="form-label">Genero de poesía</label>
+                                        <label for="name" class="form-label">Género de poesía</label>
                                         <select name ="poetry" class="form-control" readonly="true">
                                         <?php 
                                         echo '<option value="' . $_GET['poetry'] . '">' . $_GET['poetry'] . '</option>';
@@ -78,14 +78,12 @@ include('./../vista/menu/menu.php');
                                           <option value="épica">épica</option>
                                           <option value="dramática">dramática</option> -->
                                         </select>
-                                        
                                         <div class="mb-3">
-                                        <label for="name" class="form-label">fecha de Inscripción</label>
+                                        <label for="name" class="form-label">Fecha de Inscripción</label>
                                         <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth" readonly="true" value="<?php echo $_GET['fechaInscripcion']; ?>">
                                         </div>
-                                        
                                         <div class="mb-3">
-                                        <label for="name" class="form-label">fecha de Exposicion</label>
+                                        <label for="name" class="form-label">Fecha de Exposición</label>
                                         <input type="date" name ="birth" placeholder="Fecha de Nacimiento"  class="form-control" id="birth" readonly="true" value="<?php echo $_GET['fechaExposicion']; ?>">
                                         </div>
                                     </div>
@@ -93,7 +91,7 @@ include('./../vista/menu/menu.php');
                                
                         <br> 
                         
-                        <a class="btn btn-primary" href="http://localhost/universidad/vista/bienvenido.php" role="button">Regresar</a> 
+                        <a class="btn btn-primary" href="bienvenido.php" role="button">Regresar</a> 
                         </div>
                     </form>
              </section>
